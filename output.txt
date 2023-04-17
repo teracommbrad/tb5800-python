@@ -1,0 +1,51 @@
+(1) START TermEth100GL2Traffic 1
+ returned None
+(2) DELAY 5
+ returned True
+(3) SCPI :SENS:DATA? STRING:PHYSICAL:QSFP:VEND
+ returned "FINISAR CORP."
+(4) DELAY 1
+ returned True
+(5) PEEK 0 0x56
+ returned 0xf
+(6) peek 0x22
+ returned 0x0
+(7) peek 0x23
+ returned 0x1
+(8) peek 0x24
+ returned 0x0
+(9) peek 0x25
+ returned 0x1
+(10) SCPI :OUTPUT:OPTIC ON
+ returned :OUTPUT:OPTIC ON:SYST:ERR?0, "No error"
+(11) DELAY 5
+ returned True
+(12) SCPI :OUTPUT:OPTIC?
+ returned ON
+(13) DELAY 5
+ returned True
+(14) PEEK 0x56
+ returned 0x0
+(15) PEEK 0x22
+ returned 0x42
+(16) PEEK 0x23
+ returned 0x7
+(17) PEEK 0x24
+ returned 0x3f
+(18) PEEK 0x25
+ returned 0xa7
+(19) DELAY 5
+ returned True
+(20) PEEK 0x56
+ returned 0x0
+(21) PEEK 0x22
+ returned 0x42
+(22) PEEK 0x23
+ returned 0xaf
+(23) PEEK 0x24
+ returned 0x3f
+(24) PEEK 0x25
+ returned 0xe6
+(25) SCPI :OUTPUT:OPTIC OFF
+ returned :OUTPUT:OPTIC OFF:SYST:ERR?0, "No error"
+(26) DELAY 2 returned True
